@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f00;
+}
+#container{
+    /* border:1px solid #333; */
+    border-radius :20px;
+    background-color: violet;
+    
+    /* width:600px; */
+    margin:20px auto;
+    padding:20px;
+    text-align:center;
+  }
+  .main{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* width: 400px; */
+
+  }
+  footer{
+    text-align: center;
+    color: #fff;
+
+  }
+  .main button{
+    margin: 20px;
+  }
+  
+  #timer{ 
+    color: white;
+    font-size:160px; 
+    margin:10px auto;
+    border-radius:50%;
+    
+    overflow:hidden;
+    position:relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+  }
+  
+  #time{
+    /* margin-top:50px; */
+    z-index : 1;
+ 
+    position:relative;
+  }
+
+  
+  #buttons button { 
+    background:#4da6ff; 
+    border:none; 
+    color:#fff; 
+    cursor:pointer; 
+    padding:10px; 
+    width:100px; 
+    margin:10px auto;
+    font-size:30px;
+    height : 50px;
+    border-radius : 50px;
+  }
+  
+  .main button#shortBreak{
+    background : rgb(164, 198, 164);
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .main button#longBreak{
+    background : rgb(164, 198, 164);
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .main button#work{
+    background : rgb(164, 198, 164);
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+
+  @media (max-width:548px){
+    .container{
+      /* word-wrap: break-word; */
+      word-wrap: normal;
+        width: 50%;
+        padding: 10px;
+        margin: 10px;
+        align-content: center;
+    }
+    #pomodoro-app{
+        word-wrap: break-word;
+        width: 50%;
+        padding: 10px;
+        margin: 10px;
+        align-content: center;
+        
+    }
+    .main button{
+        /* word-wrap: break-word; */
+        width: 10%;
+        margin: 5px;
+        
+    }
+
+}
